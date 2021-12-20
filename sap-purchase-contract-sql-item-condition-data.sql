@@ -22,7 +22,7 @@ CREATE TABLE `sap-purchase-contract-item-condition-data`
   `ConditionIsDeleted`            tinyint(1) DEFAULT NULL,
   `PaymentTerms`                  varchar(4) DEFAULT NULL,
   `ConditionReleaseStatus`        varchar(1) DEFAULT NULL,
-  PRIMARY KEY (`PurchaseContract`, "PurchaseContractItem")
+  PRIMARY KEY (`PurchaseContract`, `PurchaseContractItem`),
   CONSTRAINT `PurchaseContract_fk` FOREIGN KEY (`PurchaseContract`) REFERENCES `sap-purchase-contract-header-data` (`PurchaseContract`)
 ) ENGINE = InnoDB
 DEFAULT CHARSET = utf8mb4;

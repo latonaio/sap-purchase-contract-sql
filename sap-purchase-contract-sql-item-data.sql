@@ -35,7 +35,7 @@ CREATE TABLE `sap-purchase-contract-item-data`
   `Material`                           varchar(40) DEFAULT NULL,
   `ProductType`                        varchar(2) DEFAULT NULL,
   `MaterialType`                       varchar(4) DEFAULT NULL,
-  PRIMARY KEY (`PurchaseContract`, `PurchaseContractItem`)
+  PRIMARY KEY (`PurchaseContract`, `PurchaseContractItem`),
   CONSTRAINT `PurchaseContract_fk` FOREIGN KEY (`PurchaseContract`) REFERENCES `sap-purchase-contract-header-data` (`PurchaseContract`)
 ) ENGINE = InnoDB
 DEFAULT CHARSET = utf8mb4;

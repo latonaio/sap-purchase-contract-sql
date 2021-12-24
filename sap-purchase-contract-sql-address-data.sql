@@ -1,8 +1,8 @@
 CREATE TABLE `sap-purchase-contract-address-data`
 (
-  `PurchaseContract`        varchar(10) DEFAULT NULL,
+  `PurchaseContract`        varchar(10) NOT NULL,
+  `PurchaseContractItem`    varchar(5) NOT NULL,
   `AddressID`               varchar(10) DEFAULT NULL,
-  `PurchaseContractItem`    varchar(5) DEFAULT NULL,
   `CityName`                varchar(40) DEFAULT NULL,
   `PostalCode`              varchar(10) DEFAULT NULL,
   `StreetName`              varchar(60) DEFAULT NULL,

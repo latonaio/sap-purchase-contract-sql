@@ -1,6 +1,6 @@
 CREATE TABLE `sap-purchase-contract-header-data`
 (
-  `PurchaseContract`                varchar(10) DEFAULT NULL,
+  `PurchaseContract`                varchar(10) NOT NULL,
   `PurchaseContractType`            varchar(5) DEFAULT NULL,
   `CompanyCode`                     varchar(4) DEFAULT NULL,
   `PurchasingDocumentDeletionCode`  varchar(1) DEFAULT NULL,

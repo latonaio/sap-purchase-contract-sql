@@ -1,7 +1,7 @@
 CREATE TABLE `sap-purchase-contract-item-data`
 (
-  `PurchaseContract`                   varchar(10) DEFAULT NULL,
-  `PurchaseContractItem`               varchar(5) DEFAULT NULL,
+  `PurchaseContract`                   varchar(10) NOT NULL,
+  `PurchaseContractItem`               varchar(5) NOT NULL,
   `PurchasingContractDeletionCode`     varchar(1) DEFAULT NULL,
   `PurchaseContractItemText`           varchar(40) DEFAULT NULL,
   `CompanyCode`                        varchar(4) DEFAULT NULL,

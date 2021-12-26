@@ -1,4 +1,4 @@
-CREATE TABLE `sap-purchase-contract-address-data`
+CREATE TABLE `sap_purchase_contract_address_data`
 (
   `PurchaseContract`        varchar(10) NOT NULL,
   `PurchaseContractItem`    varchar(5) NOT NULL,
@@ -12,6 +12,6 @@ CREATE TABLE `sap-purchase-contract-address-data`
   `PhoneNumber`             varchar(30) DEFAULT NULL,
   `FaxNumber`               varchar(30) DEFAULT NULL,
   PRIMARY KEY (`PurchaseContract`, `PurchaseContractItem`),
-  CONSTRAINT `PurchaseContract_fk` FOREIGN KEY (`PurchaseContract`) REFERENCES `sap-purchase-contract-header-data` (`PurchaseContract`)
+  CONSTRAINT `SAPPurchaseContractAddressData_fk` FOREIGN KEY (`PurchaseContract`) REFERENCES `sap_purchase_contract_header_data` (`PurchaseContract`)
 ) ENGINE = InnoDB
 DEFAULT CHARSET = utf8mb4;

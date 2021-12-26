@@ -1,12 +1,12 @@
-CREATE TABLE `sap-purchase-contract-item-condition-data`
+CREATE TABLE `sap_purchase_contract_item_condition_data`
 (
   `PurchaseContract`              varchar(10) NOT NULL,
   `PurchaseContractItem`          varchar(5) NOT NULL,
-  `ConditionValidityEndDate`      date NOT NULL,
+  `ConditionValidityEndDate`      varchar(80) NOT NULL,
   `ConditionType`                 varchar(4) DEFAULT NULL,
   `ConditionRecord`               varchar(10) DEFAULT NULL,
   `ConditionSequentialNumber`     varchar(2) DEFAULT NULL,
-  `ConditionValidityStartDate`    date DEFAULT NULL,
+  `ConditionValidityStartDate`    varchar(80) DEFAULT NULL,
   `PricingScaleType`              varchar(1) DEFAULT NULL,
   `PricingScaleBasis`             varchar(1) DEFAULT NULL,
   `ConditionScaleQuantity`        varchar(17) DEFAULT NULL,
@@ -23,6 +23,6 @@ CREATE TABLE `sap-purchase-contract-item-condition-data`
   `PaymentTerms`                  varchar(4) DEFAULT NULL,
   `ConditionReleaseStatus`        varchar(1) DEFAULT NULL,
   PRIMARY KEY (`PurchaseContract`, `PurchaseContractItem`, `ConditionValidityEndDate`),
-  CONSTRAINT `PurchaseContract_fk` FOREIGN KEY (`PurchaseContract`) REFERENCES `sap-purchase-contract-header-data` (`PurchaseContract`)
+  CONSTRAINT `SAPPurchaseContractItemConditionData_fk` FOREIGN KEY (`PurchaseContract`) REFERENCES `sap_purchase_contract_header_data` (`PurchaseContract`)
 ) ENGINE = InnoDB
 DEFAULT CHARSET = utf8mb4;

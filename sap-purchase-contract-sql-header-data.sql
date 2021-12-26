@@ -1,10 +1,10 @@
-CREATE TABLE `sap-purchase-contract-header-data`
+CREATE TABLE `sap_purchase_contract_header_data`
 (
   `PurchaseContract`                varchar(10) NOT NULL,
   `PurchaseContractType`            varchar(5) DEFAULT NULL,
   `CompanyCode`                     varchar(4) DEFAULT NULL,
   `PurchasingDocumentDeletionCode`  varchar(1) DEFAULT NULL,
-  `CreationDate`                    date DEFAULT NULL,
+  `CreationDate`                    varchar(80) DEFAULT NULL,
   `Supplier`                        varchar(10) DEFAULT NULL,
   `PurchasingOrganization`          varchar(4) DEFAULT NULL,
   `PurchasingGroup`                 varchar(3) DEFAULT NULL,
@@ -12,8 +12,8 @@ CREATE TABLE `sap-purchase-contract-header-data`
   `NetPaymentDays`                  varchar(4) DEFAULT NULL,
   `DocumentCurrency`                varchar(5) DEFAULT NULL,
   `ExchangeRate`                    varchar(12) DEFAULT NULL,
-  `ValidityStartDate`               date DEFAULT NULL,
-  `ValidityEndDate`                 date DEFAULT NULL,
+  `ValidityStartDate`               varchar(80) DEFAULT NULL,
+  `ValidityEndDate`                 varchar(80) DEFAULT NULL,
   `SupplierRespSalesPersonName`     varchar(30) DEFAULT NULL,
   `SupplierPhoneNumber`             varchar(16) DEFAULT NULL,
   `IncotermsClassification`         varchar(3) DEFAULT NULL,

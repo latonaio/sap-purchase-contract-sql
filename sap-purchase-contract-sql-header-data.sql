@@ -20,7 +20,7 @@ CREATE TABLE `sap_purchase_contract_header_data`
   `PurchaseContractTargetAmount`    varchar(13) DEFAULT NULL,
   `InvoicingParty`                  varchar(10) DEFAULT NULL,
   `ReleaseCode`                     varchar(1) DEFAULT NULL,
-  `LastChangeDateTime`              datetime DEFAULT NULL,
+  `LastChangeDateTime`              varchar(80) DEFAULT NULL,
   `PurchasingProcessingStatus`      varchar(2) DEFAULT NULL,
   `PurchasingProcessingStatusName`  varchar(60) DEFAULT NULL,
   `PurgContractIsInPreparation`     tinyint(1) DEFAULT NULL,
